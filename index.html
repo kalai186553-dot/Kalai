@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>my digital  Portfolio</title>
+
+  <style>
+
+    * {margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif;}
+
+    body {background: #f4f4f4; line-height: 1.6;}
+
+    /* Navbar */
+
+    nav {
+
+      background: #222; color: #fff;
+
+      display: flex; justify-content: space-between;
+
+      align-items: center; padding: 15px 50px;
+
+    }
+
+    nav h2 {color: #4da6ff;}
+
+    nav ul {list-style: none; display: flex;}
+
+    nav ul li {margin-left: 20px;}
+
+    nav ul li a {color: #fff; text-decoration: none; font-weight: bold;}
+
+    nav ul li a:hover {color: #4da6ff;}
+
+    /* Hero */
+
+    .hero {
+
+      background: linear-gradient(to right, #4da6ff, #00e6e6);
+
+      color: white; text-align: center; padding: 100px 20px;
+
+    }
+
+    .hero h1 span {color: yellow;}
+
+    .hero button {
+
+      margin-top: 20px; padding: 10px 20px;
+
+      border: none; border-radius: 5px;
+
+      background: white; color: #333; font-size: 16px; cursor: pointer;
+
+    }
+
+    .hero button:hover {background: #333; color: white;}
+
+    /* About */
+
+    .about {text-align: center; padding: 60px 20px; background: #fff;}
+
+    .about img {
+
+      width: 150px; height: 150px;
+
+      border-radius: 50%; margin-bottom: 20px;
+
+    }
+
+    /* Projects */
+
+    .projects {padding: 60px 20px; background: #f9f9f9;}
+
+    .projects h2 {text-align: center; margin-bottom: 40px;}
+
+    .project-list {display: flex; justify-content: center; flex-wrap: wrap; gap: 20px;}
+
+    .project {
+
+      background: white; padding: 20px; border-radius: 10px;
+
+      width: 300px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+
+    }
+
+    /* Contact */
+
+    .contact {padding: 60px 20px; text-align: center; background: #fff;}
+
+    .contact form {max-width: 400px; margin: auto;}
+
+    .contact input, .contact textarea {
+
+      width: 100%; padding: 10px; margin: 10px 0;
+
+      border: 1px solid #ccc; border-radius: 5px;
+
+    }
+
+    .contact button {
+
+      padding: 10px 20px; background: #4da6ff;
+
+      color: white; border: none; border-radius: 5px; cursor: pointer;
+
+    }
+
+    /* Footer */
+
+    footer {
+
+      background: #222; color: white;
+
+      text-align: center; padding: 20px; margin-top: 20px;
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <!-- Navbar -->
+
+  <nav>
+
+    <h2>Kalai Vani</h2>
+
+    <ul>
+
+      <li><a href="#home">Home</a></li>
+
+      <li><a href="#about">About</a></li>
+
+      <li><a href="#projects">Projects</a></li>
+
+      <li><a href="#contact">Contact</a></li>
+
+    </ul>
+
+  </nav>
+
+  <!-- Hero -->
+
+  <section class="hero" id="home">
+
+    <h1>Hello, I'm <span>M.Kalai Vani</span></h1>
+
+    <p>A passionate student learning web development 🚀</p>
+
+    <button onclick="document.getElementById('projects').scrollIntoView()">View My Work</button>
+
+  </section>
+
+  <!-- About -->
+
+  <section class="about" id="about">
+
+    <h2>About Me</h2>
+
+    <img src="your-photo.jpg" alt="Kalai Vani">
+
+    <p>Hello! I'm <b>M.Kalai Vani</b>, a student interested in web development and programming.  
+
+       I enjoy building websites and learning new technologies.</p>
+
+  </section>
+
+  <!-- Projects -->
+
+  <section class="projects" id="projects">
+
+    <h2>My Projects</h2>
+
+    <div class="project-list">
+
+      <div class="project">
+
+        <h3>Portfolio Website</h3>
+
+        <p>A personal portfolio website to showcase my projects and skills.</p>
+
+      </div>
+
+      <div class="project">
+
+        <h3>Student Management System</h3>
+
+        <p>A simple web app to manage student records using HTML, CSS, and JavaScript.</p>
+
+      </div>
+
+      <div class="project">
+
+        <h3>Calculator App</h3>
+
+        <p>A responsive calculator built with HTML, CSS, and JavaScript.</p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Contact -->
+
+  <section class="contact" id="contact">
+
+    <h2>Contact Me</h2>
+
+    <form>
+
+      <input type="text" placeholder="Your Name" required>
+
+      <input type="email" placeholder="Your Email" required>
+
+      <textarea placeholder="Your Message"></textarea>
+
+      <button type="submit">Send Message</button>
+
+    </form>
+
+  </section>
+
+  <!-- Footer -->
+
+  <footer>
+
+    <p>&copy; 2025 M.Kalai Vani. All Rights Reserved.</p>
+
+  </footer>
+
+</body>
+
+</html>
